@@ -1,0 +1,32 @@
+{
+    "main": {
+      "1": {
+        "verbiage": "If you would like to speak with Saul Goodman or the front office of one two three company, press 1",
+        "action": "/get_menu?menu=front"
+      },
+      "2": {
+        "verbiage": "For assistance or for tech support please press 2",
+        "action": "/get_menu?menu=tech"
+      }
+    },
+    "front": {
+      "1": {
+        "verbiage": "To speak with Saul Googman, press 1",
+        "action": "/dial_reception?name=reception&group=reception"
+      },
+      "2": {
+        "verbiage": "For other front office departments, press 2",
+        "action": "/get_voicemail_fo?group=front_office"
+      }
+    },
+    "tech": {
+      "1": {
+        "verbiage": "For issues with your computer or your internet, press 1",
+        "action": "/get_voicemail_it?group=it_support"
+      },
+      "2": {
+        "verbiage": "For all other issues or if you would like to leave a voicemail for Chris, press 2",
+        "action": "/get_voicemail?group=chris_support"
+      }
+    }
+  }
